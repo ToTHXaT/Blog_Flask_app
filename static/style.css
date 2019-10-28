@@ -1,0 +1,34 @@
+body {
+    display:grid;
+    width: 100vw;
+    height: 97vh;
+    grid-template-columns: 1fr 10fr 1fr;
+    grid-template-rows: 60px auto 50px;
+    grid-template-areas: 
+    'h h h'
+    'sb m fl'
+    'f f f';
+    grid-gap:1px;
+    justify-content: center;
+    margin : 0px;   
+}
+
+.filler {
+    grid-area: fl;
+    background-color: #fff;
+}
+
+.main-content {
+    grid-area: m;
+    background-color: green;
+}
+
+.side-bar {
+    grid-area: sb;
+    background-color: grey;
+}
+
+.footer {
+    grid-area: f;
+    background-color: blue;
+}
